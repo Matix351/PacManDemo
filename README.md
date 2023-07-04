@@ -1,7 +1,7 @@
 # PacManDemo
 This is a simple PacMan game written in unity
 
-The game was developed using Unity version X.X.X
+The game was developed using Unity version 2022.3.2f1
 
 ## Installation
 
