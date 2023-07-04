@@ -36,11 +36,12 @@ public class GameManager : MonoBehaviour
         Pause();
         gameOver.SetActive(false);
         playButtton.SetActive(true);
-
-        //NewGame();
         
+    //NewGame();
 
-    }
+
+
+}
 
     public void play()
     {
@@ -54,6 +55,11 @@ public class GameManager : MonoBehaviour
     private void Pause()
     {
         Time.timeScale = 0f;
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+
+        }
     }
 
     private void Update()
@@ -106,9 +112,11 @@ public class GameManager : MonoBehaviour
         }
 
         this.pacman.gameObject.SetActive(false);
+        
 
         this.gameOver.SetActive(true);
         this.playButtton.SetActive(true);
+
     }
 
     private void SetScore(int score)
