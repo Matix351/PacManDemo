@@ -68,6 +68,11 @@ public class GameManager : MonoBehaviour
         {
             NewGame();
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+
+        }
     }
 
     private void NewGame()

@@ -32,10 +32,6 @@ public class Pacman : MonoBehaviour
         {
             this.movement.SetDirection(Vector2.right);
 
-        }else if( Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-            
         }
 
         float angle = Mathf.Atan2(this.movement.direction.y, this.movement.direction.x);
